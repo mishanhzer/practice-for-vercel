@@ -59,7 +59,7 @@ class RandomChar extends Component {
         const {char, loading, error} = this.state;
 
         const errorMessage = error ? <ErrorMessage/> : null;
-        const spinner = loading ? <Spinner/> : null;
+        const spinner = (!error && loading) ? <Spinner/> : null;
         const content = !(loading || error) ? <View char={char}/> : null; 
         
         return (
