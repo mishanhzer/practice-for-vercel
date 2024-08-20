@@ -8,7 +8,6 @@ import Skeleton from  '../skeleton/Skeleton';
 
 import './charInfo.scss';
 
-
 class CharInfo extends Component {
     state = {
         char: null, 
@@ -45,7 +44,6 @@ class CharInfo extends Component {
             loading: false,
         });
     }
-
 
     onCharLoading = () => { 
         this.setState({
@@ -123,7 +121,6 @@ const View = ({char}) => {
         </>
     )
 }
-
 
 CharInfo.propTypes = { 
     charId: PropTypes.number 
